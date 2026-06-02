@@ -1,0 +1,6 @@
+[2026-06-02 22:07:25,772] root - INFO - Starting Data Ingestion
+[2026-06-02 22:07:27,766] root - INFO - Dataframe Shape : (11055, 31)
+[2026-06-02 22:07:27,860] root - INFO - Feature store file saved successfully
+[2026-06-02 22:07:27,962] root - INFO - Train and Test files created successfully
+[2026-06-02 22:07:27,962] root - INFO - Data Ingestion Completed Successfully
+[2026-06-02 22:07:27,962] root - INFO - Data Ingestion Artifact : DataIngestionArtifact(trained_file_path='Artifacts\\06-02-2026-22-07-24\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06-02-2026-22-07-24\\data_ingestion\\ingested\\test.csv')

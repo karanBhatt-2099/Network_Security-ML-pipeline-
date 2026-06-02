@@ -3,3 +3,6 @@ pandas
 numpy
 pymongo
 certifi
+pymongo[srv]
+dillinger
+pyyaml

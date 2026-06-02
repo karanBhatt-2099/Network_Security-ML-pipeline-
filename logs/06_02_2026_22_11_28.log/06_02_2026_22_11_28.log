@@ -1,0 +1,12 @@
+[2026-06-02 22:11:30,629] root - INFO - Starting Data Ingestion
+[2026-06-02 22:11:32,424] root - INFO - Dataframe Shape : (11055, 31)
+[2026-06-02 22:11:32,518] root - INFO - Feature store file saved successfully
+[2026-06-02 22:11:32,624] root - INFO - Train and Test files created successfully
+[2026-06-02 22:11:32,624] root - INFO - Data Ingestion Completed Successfully
+[2026-06-02 22:11:32,624] root - INFO - Data Ingestion Artifact : DataIngestionArtifact(trained_file_path='Artifacts\\06-02-2026-22-11-29\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06-02-2026-22-11-29\\data_ingestion\\ingested\\test.csv')
+[2026-06-02 22:11:32,640] root - INFO - Starting Data Validation
+[2026-06-02 22:11:32,741] root - INFO - Required columns : 31
+[2026-06-02 22:11:32,741] root - INFO - Available columns : 31
+[2026-06-02 22:11:32,741] root - INFO - Required columns : 31
+[2026-06-02 22:11:32,741] root - INFO - Available columns : 31
+[2026-06-02 22:11:32,980] root - INFO - Data Validation Artifact : DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\06-02-2026-22-11-29\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\06-02-2026-22-11-29\\data_validation\\validated\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\06-02-2026-22-11-29\\data_validation\\drift_report\\report.yaml')
