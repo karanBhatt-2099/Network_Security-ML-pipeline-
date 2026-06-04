@@ -58,9 +58,7 @@ class DataTransformation:
         Creates preprocessing pipeline.
         """
         try:
-            logging.info(
-                "Creating Data Transformation Pipeline"
-            )
+            logging.info("Creating Data Transformation Pipeline")
 
             imputer = KNNImputer(
                 **DATA_TRANSFORMATION_IMPUTER_PARAMS
@@ -161,7 +159,7 @@ class DataTransformation:
             )
 
             # ==========================
-            # Create Final Arrays
+            # Final Arrays
             # ==========================
 
             train_arr = np.c_[
@@ -175,7 +173,7 @@ class DataTransformation:
             ]
 
             # ==========================
-            # Save Train/Test Arrays
+            # Save Arrays
             # ==========================
 
             save_numpy_array_data(
@@ -189,7 +187,7 @@ class DataTransformation:
             )
 
             # ==========================
-            # Save Preprocessor Object
+            # Save Preprocessor
             # ==========================
 
             save_object(
@@ -198,24 +196,18 @@ class DataTransformation:
             )
 
             # ==========================
-            # Create Artifact
+            # Artifact
             # ==========================
 
-            data_transformation_artifact = (
-                DataTransformationArtifact(
-                    transformed_train_file_path=
-                    self.data_transformation_config.transformed_train_file_path,
+            data_transformation_artifact = DataTransformationArtifact(
+                transformed_train_file_path=
+                self.data_transformation_config.transformed_train_file_path,
 
-                    transformed_test_file_path=
-                    self.data_transformation_config.transformed_test_file_path,
+                transformed_test_file_path=
+                self.data_transformation_config.transformed_test_file_path,
 
-                    transformed_object_file_path=
-                    self.data_transformation_config.preprocessor_object_file_path
-                )
-            )
-
-            logging.info(
-                f"Data Transformation completed successfully"
+                preprocessor_object_file_path=
+                self.data_transformation_config.preprocessor_object_file_path
             )
 
             logging.info(

@@ -1,0 +1,21 @@
+[2026-06-04 22:53:51,687] root - INFO - Starting Data Ingestion
+[2026-06-04 22:53:53,602] root - INFO - Dataframe Shape : (11055, 31)
+[2026-06-04 22:53:53,673] root - INFO - Feature store file saved successfully
+[2026-06-04 22:53:53,761] root - INFO - Train and Test files created successfully
+[2026-06-04 22:53:53,761] root - INFO - Data Ingestion Completed Successfully
+[2026-06-04 22:53:53,761] root - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\06-04-2026-22-53-48\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06-04-2026-22-53-48\\data_ingestion\\ingested\\test.csv')
+[2026-06-04 22:53:53,768] root - INFO - Starting Data Validation
+[2026-06-04 22:53:54,133] root - INFO - Required columns : 31
+[2026-06-04 22:53:54,134] root - INFO - Available columns : 31
+[2026-06-04 22:53:54,134] root - INFO - Required columns : 31
+[2026-06-04 22:53:54,134] root - INFO - Available columns : 31
+[2026-06-04 22:53:54,517] root - INFO - Data Validation Artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\06-04-2026-22-53-48\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\06-04-2026-22-53-48\\data_validation\\validated\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\06-04-2026-22-53-48\\data_validation\\drift_report\\report.yaml')
+[2026-06-04 22:53:54,517] root - INFO - Starting Data Transformation
+[2026-06-04 22:53:54,517] root - INFO - Reading validated train and test data
+[2026-06-04 22:53:54,653] root - INFO - Train Shape: (8844, 31)
+[2026-06-04 22:53:54,653] root - INFO - Test Shape: (2211, 31)
+[2026-06-04 22:53:54,659] root - INFO - Creating Data Transformation Pipeline
+[2026-06-04 22:53:54,689] root - INFO - Data Transformation completed successfully
+[2026-06-04 22:53:54,689] root - INFO - Data Transformation Artifact: DataTransformationArtifact(transformed_train_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed\\test.npy', transformed_object_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed_object\\preprocessing.pkl')
+[2026-06-04 22:53:54,691] root - INFO - Data Transformation Artifact: DataTransformationArtifact(transformed_train_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed\\test.npy', transformed_object_file_path='Artifacts\\06-04-2026-22-53-48\\data_transformation\\transformed_object\\preprocessing.pkl')
+[2026-06-04 22:53:54,693] root - INFO - Starting Model Training

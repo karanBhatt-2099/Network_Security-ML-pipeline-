@@ -51,3 +51,16 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS = {
     "n_neighbors": 3,
     "weights": "uniform"
 }
+
+DATA_TRANSFORMATION_TRAIN_FILE_PATH: str = "train.npy"
+DATA_TRANSFORMATION_TEST_FILE_PATH: str = "test.npy"
+
+"""
+Model Trainer related constant start with Mode Trainer VAR name
+"""
+
+MODEL_TRAINER_DIR_NAME = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR = "trained_model"
+MODEL_TRAINER_MODEL_FILE_NAME = "model.pkl"
+MODEL_TRAINER_EXPECTED_SCORE = 0.6
+MODEL_TRAINER_OVER_FITTING_UNDER_FITTING_THRESHOLD = 0.05
